@@ -3,7 +3,8 @@ with user_balance as (
         U.name
       , sum(T.amount) as balance
     from Transactions as T
-    join Users as U on T.account = U.account
+    join Users as U 
+        on T.account = U.account
     group by U.name
 )
 select *
