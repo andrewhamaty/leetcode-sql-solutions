@@ -25,11 +25,11 @@ with Insurance2 as (
 , final as (
     select
         I2.pid
-    , I2.tiv_2015
-    , I2.tiv_2016
-    , I2.lat_lon
-    , T2C.tiv_2015_count
-    , LLC.lat_lon_count
+      , I2.tiv_2015
+      , I2.tiv_2016
+      , I2.lat_lon
+      , T2C.tiv_2015_count
+      , LLC.lat_lon_count
     from Insurance2 as I2
     left join tiv_2015_counts as T2C
     on I2.tiv_2015 = T2C.tiv_2015
