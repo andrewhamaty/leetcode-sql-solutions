@@ -11,7 +11,7 @@ with Insurance2 as (
 , tiv_2015_counts as (
     select
         I.tiv_2015
-    , count(tiv_2015) as tiv_2015_count
+      , count(tiv_2015) as tiv_2015_count
     from insurance as I
     group by I.tiv_2015
 )
